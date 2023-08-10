@@ -29,6 +29,9 @@ body {
   border-radius: inherit;
   color: hsl(241, 100%, 89%);
 }
+h1 {
+  font-size: 1.5rem;
+}
 
 h2 {
   font-size: 2rem;
@@ -52,6 +55,7 @@ p {
   text-align: center;
 }
 .circle span {
+  font-weight: bold;
   display: block;
   font-size: 4rem;
   color: hsl(0, 0%, 100%);
@@ -72,9 +76,7 @@ p {
   margin-left: 10%;
   color: hsl(224, 30%, 27%);
 }
-
 .item {
-  background-color: black;
   width: 80%;
   padding: 15px;
   border-radius: 5px;
