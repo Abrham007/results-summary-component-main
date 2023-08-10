@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  height: 500px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 35px 0px hsl(241, 100%, 89%);
+  text-align: center;
+}
+.container-1 {
+  flex: 1;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: inherit;
+  color: hsl(241, 100%, 89%);
+}
+
+h2 {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+p {
+  margin-top: -20px;
+  width: 65%;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  text-align: center;
+}
+.circle span {
+  display: block;
+  font-size: 4rem;
+  color: hsl(0, 0%, 100%);
+}
+.container-2 {
+  flex: 1;
+  min-width: 50%;
+  background-color: white;
+  border-radius: inherit;
+}
+.container-2 > * {
+  margin: 15px auto;
+}
+.container-2 > h3 {
+  margin: 35px;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 10%;
+  color: hsl(224, 30%, 27%);
+}
+
+.item {
+  background-color: black;
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+}
+.item > img {
+  margin-right: 10px;
+  float: left;
+}
+.item > span {
+  color: hsl(224, 30%, 27%);
+  float: right;
+}
+.item > span > span {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+}
+.red {
+  background-color: hsl(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.yellow {
+  background-color: hsl(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.green {
+  background-color: hsl(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.blue {
+  background-color: hsl(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+.but {
+  margin-top: 30px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  height: 55px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border-radius: 30px;
+  border: none;
+}
+.but:hover {
+  background-color: hsl(241, 81%, 54%);
+  cursor: pointer;
+}
+@media (max-width: 786px) {
+  .container {
+    width: 100vh;
+    height: 100vh;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .container-1 {
+    border-radius: 0 0 40px 40px;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .circle {
+    height: 140px;
+    width: 140px;
+  }
+  .circle span {
+    font-size: 3.3rem;
+  }
+  .container-2 > h3 {
+    margin: 20px;
+    font-size: 1.2rem;
+
+    margin-left: 10%;
+  }
+  .but {
+    margin: 10px;
+  }
+}
